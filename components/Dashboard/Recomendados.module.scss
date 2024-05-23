@@ -1,0 +1,39 @@
+.container {
+    background-color: var(--middle-color);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    // border-radius: 10px;
+
+    h2 {
+        padding: 20px 30px;
+    }
+
+    .itens {
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+        padding-bottom: 15px;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+
+        .item {
+            box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+            background-color: var(--white);
+            padding: 10px;
+            width: 25%;
+            cursor: pointer;
+
+            &:not(:first-child){
+                margin-left: 20px;
+            }
+
+            &:hover {
+                transform: scale(1.01);
+            }
+
+            small{
+                font-size: 7pt;
+            }
+        }
+    }
+}

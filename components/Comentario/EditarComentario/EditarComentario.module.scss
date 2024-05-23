@@ -1,0 +1,80 @@
+.formCadastrar {
+    margin: 0 auto;
+    padding: 30px 50px;
+    display: flex;
+    max-width: 500px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    form {
+
+        .formGroup {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                height: 40px;
+                border-radius: 5px;
+                border: 1px solid var(--gray);
+            }
+
+            small {
+                color: var(--gray);
+            }
+
+            &:not(:first-child){
+                margin-top: 20px;
+            }
+        }
+        
+        .formButtons {
+            display: flex;
+            justify-content: flex-end;
+    
+            button {
+                background-color: var(--main-color);
+                color: var(--white);
+                margin-left: 20px;
+                margin-top: 30px;
+                width: 120px;
+
+                &:nth-child(1) {
+                    background-color: var(--red);
+                }
+
+                &:hover {
+                    background-color: var(--light-color);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440) {
+    
+}
+
+
+@media (min-width: 768px) {
+    .formCadastrar {
+        width: 95%;
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .formCadastrar {
+        width: 95%;
+        padding: 50px 15px;
+
+        form {
+            .formButtons {
+                button {
+                    margin: 15px 5px;
+                }
+            }
+        }
+    }
+}

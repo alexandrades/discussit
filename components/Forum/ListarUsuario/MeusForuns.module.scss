@@ -1,0 +1,13 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    .container_header {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.listUsuarios {
+    max-width: 1200px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 425px) {
+    .listUsuarios {
+        width: 95%;
+        margin: 20px auto 40px auto;
+    }
+}

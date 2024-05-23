@@ -1,0 +1,50 @@
+.profileContainer {
+    max-width: 1024px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    .mainInfo {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 20px;
+
+        div small {
+            margin-right: 10px;
+        }
+
+        span {
+            border-radius: 50%;
+        }
+    }
+
+    .subMainInfo {
+        flex-grow: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 0 40px;
+
+        div {
+            display: flex;
+
+            span {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    button {
+        height: 40px;
+    }
+
+    .generalInfo {
+        h5 {
+            margin-top: 20px;
+        }
+        
+    }
+}
