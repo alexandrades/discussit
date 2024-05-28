@@ -60,7 +60,7 @@ export default function ProfileView({usuario, foruns}) {
     return (
         <div className={styles.profileContainer}>
             <div className={styles.mainInfo}>
-                <Image src={`http://localhost:3001${usuario.avatar ?? '/public/avatar/defaultAvatar.jpg'}`} width={150} height={150} layout='intrinsic' objectFit='cover'></Image>
+                <Image src={`https://discussit-api.onrender.com${usuario.avatar ?? '/public/avatar/defaultAvatar.jpg'}`} width={150} height={150} layout='intrinsic' objectFit='cover'></Image>
                 <div className={styles.subMainInfo}>
                     <h4>{usuario.nome}</h4>
                     <small>@{usuario.usuario}</small>

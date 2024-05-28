@@ -28,7 +28,7 @@ export function ForumHeader({ forum }) {
     const profileOwner = forum.usuario.usuario == usuarioLogado?.usuario
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/forum/${currentForum.idForum}`).then(response => {
+        axios.get(`https://discussit-api.onrender.com/forum/${currentForum.idForum}`).then(response => {
             response.data.comentarios = response.data.comentarios.reverse()
             setCurrentForum(response.data)
         })

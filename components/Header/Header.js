@@ -26,7 +26,7 @@ export default function Header({hide}) {
             <div className={styles.dropdown}>
               <Link href={`/${usuario.usuario}`}><span>{usuario.usuario}</span></Link>
               
-              <Image src={`http://localhost:3001${usuario.avatar ?? '/public/avatar/defaultAvatar.jpg'}`} alt="avatar" width={35} height={35} objectFit='cover' layout='intrinsic'/>
+              <Image src={`https://discussit-api.onrender.com${usuario.avatar ?? '/public/avatar/defaultAvatar.jpg'}`} alt="avatar" width={35} height={35} objectFit='cover' layout='intrinsic'/>
               <div className={styles.dropdownContent}>
                 <ul>
                 <Link href={`/${usuario.usuario}/profile`}><li>Meu perfil</li></Link>

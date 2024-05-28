@@ -41,11 +41,11 @@ export function ComentarioItem({ comentario }) {
         <div className={styles.comment_box} key={comentario.idComentario}>
 
             <div className={styles.comment_img_profile}>
-                <Image src={`http://localhost:3001${comentario.usuario.avatar ?? '/public/avatar/defaultAvatar.jpg'}`} alt="avatar" width={60} height={60} objectFit='cover' fill={"true"} />
+                <Image src={`https://discussit-api.onrender.com${comentario.usuario.avatar ?? '/public/avatar/defaultAvatar.jpg'}`} alt="avatar" width={60} height={60} objectFit='cover' fill={"true"} />
             </div>
             <div className={styles.comment_content}>
                 <div>
-                    <Link href={`http://localhost:3000/${comentario.usuario.usuario}/profile`}><h5>{comentario.usuario.usuario}</h5></Link>
+                    <Link href={`https://discussit-tan.vercel.app/${comentario.usuario.usuario}/profile`}><h5>{comentario.usuario.usuario}</h5></Link>
                     <p>{comentario.conteudo}</p>
                     <small>Criado em: {new Date(comentario.createdAt).toLocaleString('pt-br')}</small>{" - "}
                     <small>Atualizado em: {new Date(comentario.updatedAt).toLocaleString('pt-br')}</small>
