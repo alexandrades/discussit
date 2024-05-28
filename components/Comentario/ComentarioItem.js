@@ -37,11 +37,15 @@ export function ComentarioItem({ comentario }) {
         Router.reload()
     }
 
+    const imageLoader = ({ src, width, quality }) => {
+        return `https://discussit-api.onrender.com/${src}?w=${width}&q=${quality || 75}`
+      }
+
     return(
         <div className={styles.comment_box} key={comentario.idComentario}>
 
             <div className={styles.comment_img_profile}>
-                <Image src={`https://discussit-api.onrender.com${comentario.usuario.avatar ?? '/public/avatar/defaultAvatar.jpg'}`} alt="avatar" width={60} height={60} objectFit='cover' fill={"true"} />
+                <Image src={'/public/avatar/defaultAvatar.jpg'} loader={imageLoader} alt="avatar" width={60} height={60} objectFit='cover' fill={"true"} />
             </div>
             <div className={styles.comment_content}>
                 <div>
